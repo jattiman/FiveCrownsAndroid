@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table"
+    tools:context=".RoundController">
+
+    <TextView
+        android:id="@+id/drawPileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/draw_pile"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerHandScrollView" />
+
+    <HorizontalScrollView
+        android:id="@+id/playerHandScrollView"
+        android:layout_width="377dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/hands_background"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerHandTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/humanCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <ImageButton
+                android:id="@+id/humanCard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/humanCard13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <ImageButton
+                android:id="@+id/humanCard14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_bg"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:onClick="humanCardSelect"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/playerPointsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/display_points"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/opponentTitle"
+        app:layout_constraintTop_toBottomOf="@+id/opponentHandScrollView" />
+
+    <TextView
+        android:id="@+id/playerHandTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/player_stats"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opponentHandScrollView" />
+
+    <HorizontalScrollView
+        android:id="@+id/opponentHandScrollView"
+        android:layout_width="377dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/hands_background"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opponentTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/compCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <ImageView
+                android:id="@+id/compCard14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/opponentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/opponent_stats"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/opponentPointsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/display_points"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/opponentTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/discardPileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/discard_pile"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerHandScrollView" />
+
+    <HorizontalScrollView
+        android:id="@+id/discardPileScrollView"
+        android:layout_width="58dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/hands_background"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discardPileTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/discardCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/card_background"
+                android:background="@drawable/hands_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/drawPileScrollView"
+        android:layout_width="58dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/hands_background"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawPileTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/drawCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/hands_background"
+                android:contentDescription="@string/card_background"
+                android:padding="2dp"
+                android:src="@drawable/card_bg" />
+
+            <!-- <TextView
+                android:id="@+id/drawCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" /> -->
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/drawButton"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/draw_pull"
+        android:onClick="drawCardToPile"
+        app:layout_constraintEnd_toStartOf="@+id/discardButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerPromptText" />
+
+    <Button
+        android:id="@+id/discardButton"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/discard_pull"
+        android:onClick="discardCardToPile"
+        app:layout_constraintEnd_toStartOf="@+id/helpButton"
+        app:layout_constraintStart_toEndOf="@+id/drawButton"
+        app:layout_constraintTop_toBottomOf="@+id/playerPromptText" />
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/help_request"
+        android:onClick="askForHelp"
+        app:layout_constraintEnd_toStartOf="@+id/saveButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/discardButton"
+        app:layout_constraintTop_toBottomOf="@+id/playerPromptText" />
+
+    <TextView
+        android:id="@+id/playerPromptText"
+        android:layout_width="377dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/hands_background"
+        android:gravity="bottom"
+        android:includeFontPadding="true"
+        android:padding="3dp"
+        android:scrollbars="vertical"
+        android:text="@string/select_choice"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/discardPileScrollView" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/save_game_select"
+        android:onClick="saveGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/helpButton"
+        app:layout_constraintTop_toBottomOf="@+id/playerPromptText" />
+
+    <TextView
+        android:id="@+id/opponentPointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/opponentPointsTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerPointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerPointsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/opponentHandScrollView" />
+
+
+    <TextView
+        android:id="@+id/roundDebugString"
+        android:layout_width="407dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/hands_background"
+        android:gravity="bottom"
+        android:includeFontPadding="true"
+        android:padding="2dp"
+        android:scrollbars="vertical"
+        android:text="@string/round_debug"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discardButton" />
+
+
+    <TextView
+        android:id="@+id/roundNumberDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/round"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/discardPileScrollView"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/drawPileScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/playerHandScrollView" />
+
+    <Button
+        android:id="@+id/computerMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/opponent_s_turn"
+        android:visibility="invisible"
+        android:onClick="moveComputer"
+        app:layout_constraintEnd_toEndOf="@+id/discardButton"
+        app:layout_constraintStart_toStartOf="@+id/drawButton"
+        app:layout_constraintTop_toBottomOf="@+id/playerPromptText" />
+
+    <Button
+        android:id="@+id/roundSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Round Summary"
+        android:visibility="invisible"
+        android:onClick="showRoundSummary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerHandScrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

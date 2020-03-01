@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table"
+    tools:context=".GameResultsController">
+
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="528dp"
+        android:onClick="goToGoinToss"
+        android:text="@string/new_game_select"
+        app:layout_constraintStart_toEndOf="@+id/buttonNextRound"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNextRound"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:onClick="startNextRound"
+        android:text="@string/next_round_select"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonNewGame"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNewGame" />
+
+    <TextView
+        android:id="@+id/statusReportTitle"
+        android:layout_width="248dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/play_next"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:layout_width="409dp"
+        android:layout_height="354dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/hands_background"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusReportTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gameWinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Game Winner" />
+
+            <TextView
+                android:id="@+id/roundWinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Round Winner" />
+
+            <TextView
+                android:id="@+id/humRoundPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Human Round Points" />
+
+            <TextView
+                android:id="@+id/humTotalPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Human Total Points" />
+            <TextView
+                android:id="@+id/compRoundPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Computer Round Points" />
+            <TextView
+                android:id="@+id/compTotalPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Computer Total Points" />
+            <TextView
+                android:id="@+id/nextRoundUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="NextRound" />
+            <TextView
+                android:id="@+id/gameOverPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Game Over Status" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

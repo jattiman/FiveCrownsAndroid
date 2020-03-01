@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <!-- Transparency help: https://stackoverflow.com/questions/5445085/understanding-colors-on-android-six-characters/11019879#11019879 -->
+    <color name="transparent">#00FFFFFF</color>
+</resources>

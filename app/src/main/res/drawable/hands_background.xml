@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resource used for this: https://developer.android.com/guide/topics/resources/drawable-resource#Shape -->
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:radius="5dp" />
+    <gradient
+        android:endColor="@color/white"
+        android:startColor="@color/white" />
+    <padding
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="0dp" />
+    <!-- <size
+        android:width="integer"
+        android:height="integer" />
+    <solid
+        android:color="color" /> -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/black" />
+</shape>
